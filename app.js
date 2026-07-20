@@ -75,7 +75,7 @@ const sectionMeta = {
     eyebrow: "Ruta 02 · MAAT",
     title: "Activación por MAAT",
     description: "Tipificación del error, evidencia, token, NIP y cierre correcto del trámite.",
-    link: "./assets/downloads/guia-errores-maat.pdf",
+    link: "./guia-errores-maat.pdf",
   },
   cierre: {
     eyebrow: "Cierre",
@@ -95,7 +95,7 @@ const resultCount = document.querySelector("#resultCount");
 let activeSlideIndex = 0;
 let activeFilter = "all";
 
-const slidePath = (number) => `./assets/slides/slide-${String(number).padStart(2, "0")}.webp`;
+const slidePath = (number) => `./slide-${String(number).padStart(2, "0")}.webp`;
 
 function createSection(sectionKey) {
   const meta = sectionMeta[sectionKey];
